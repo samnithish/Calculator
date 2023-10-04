@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+</head>
+<body>
+    <form class="calculator" name="calci">
+        <div class="inerbox">
+            <input type="text" class="value" name="texta" readonly/>
+        </div>
+        <div class="spans">
+            <span class="num" onclick="calci.texta.value=''">AC</span>
+            <span class="num" onclick="document.calci.texta.value=calci.texta.value.slice(0,-1)"><i class="fa-solid fa-delete-left"></i></span>
+            <span class="num" onclick="document.calci.texta.value+='/'">/</span>
+            <span class="num" onclick="document.calci.texta.value+='*'">*</span>
+            <span class="num" onclick="document.calci.texta.value+='7'">7</span>
+            <span class="num" onclick="document.calci.texta.value+='8'">8</span>
+            <span class="num" onclick="document.calci.texta.value+='9'">9</span>
+            <span class="num" onclick="document.calci.texta.value+='-'">-</span>
+            <span class="num" onclick="document.calci.texta.value+='4'">4</span>
+            <span class="num" onclick="document.calci.texta.value+='5'">5</span>
+            <span class="num" onclick="document.calci.texta.value+='6'">6</span>
+            <span class="num" onclick="document.calci.texta.value+='+'">+</span>
+            <span class="num" onclick="document.calci.texta.value+='1'">1</span>
+            <span class="num" onclick="document.calci.texta.value+='2'">2</span>
+            <span class="num" onclick="document.calci.texta.value+='3'">3</span>
+            <span class="num" onclick="document.calci.texta.value+='.'">.</span>
+            <span class="num" onclick="document.calci.texta.value+='00'">00</span>
+            <span class="num" onclick="document.calci.texta.value+='0'">0</span>
+            <span class="num eq" onclick="document.calci.texta.value=eval(calci.texta.value)">=</span>
+        </div>
+    </form>
+</body>
+</html>
